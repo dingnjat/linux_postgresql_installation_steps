@@ -1,0 +1,2 @@
+# postgresql_installation_steps
+PostgreSQL installation for beginner
