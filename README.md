@@ -11,5 +11,5 @@
 1. go to pg_hba.conf in /var/lib/pgsql/11/data/ (maybe need superuser permission)
 2. open it and configure it follow the intructions. If you dont understand, only change METHOD (local, ipv4, ipv6 connection) to md5. Keep in mind the ADDRESS connection
 3. open postgresql.conf in the same direction, uncomment line `listen_addresses = 'localhost'` and `port = 5432`
-4. Restart the postgresql service: run `sudo systemctl restart postgresql11` in terminal
+4. Restart the postgresql service: run `sudo systemctl restart postgresql-11` in terminal
 5. Test connect `psql -h 127.0.0.1 -d database_name -U user` and enter password for `user`. (You need create a database)
