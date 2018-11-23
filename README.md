@@ -5,7 +5,7 @@
 3. If you has not added PATH yet, run `export PATH="path_to_bin:$PATH"`. E.g `export PATH="/usr/pgsql-11/bin:$PATH"`. Then run it.
 4. Run `psql` to run psql interface. Now, we can use sql queries with postgresql
 ### Create user
-1. `CREATE USER username;`
+1. `CREATE USER username WITH ENCRYPTED PASSWORD 'passoword';`
 2. `ALTER USER username WITH ROLE1 ROLE2....;`
 ### Connect to PostgreSQL
 1. go to pg_hba.conf in /var/lib/pgsql/11/data/ (maybe need superuser permission)
